@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 route::get('login','api\\authcontroller@formlogin')->name('login.get');
 Route::get('logout', 'logincontroller@getlogout')->name('logout.get');
